@@ -1,11 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleAppDayW1D2;
 
-
-static void People(string[] argus)
-{
-
-    Person person = new Person
+    var person = new Person
     {
         name = "Sachidu",
         surname = "Fernando",
@@ -16,4 +12,3 @@ static void People(string[] argus)
     Console.WriteLine(person.getSurname());
     Console.WriteLine(person.getAge());
 
-}
