@@ -9,30 +9,34 @@ namespace ConsoleAppDayW1D2
 {
     public class Person
     {
-        public string name { get; set; }
-        public string surname { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int Age { get; set; }
 
-        public int age { get; set; }
-
-
-        public string getName()
+        public Person(string name, string surname, int age)
         {
-            return name;
+            this.Name = name;
+            this.Surname = surname;
+            this.Age = age.ToString();
+        }
+        public string GetName()
+        {
+            return Name;
         }
 
-        public string getSurname() 
-        {
-            return surname;
+        public string GetSurname()
+        { 
+            return Surname;
         }
 
         public int getAge()
         {
-            return age;
+            return Age.ToString();
         }
 
-        public string getDettagli() 
+        public string getDetails() 
         {
-            return $"Nome: {name}, Cognome:{surname}, Età: {age}";
+            return $"Nome: {Name}, Cognome:{Surname}, Età: {Age}";
         }
     }
 }
